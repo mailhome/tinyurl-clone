@@ -3,6 +3,7 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools"
 import { TanStackDevtools } from "@tanstack/react-devtools"
 
 import appCss from "../styles.css?url"
+import Navbar from "@/components/navbar/navbar"
 
 export const Route = createRootRoute({
   head: () => ({
@@ -41,7 +42,14 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        {children}
+        <div className="min-h-screen bg-[#f2f2f2] flex flex-col">
+          <Navbar />
+          <div className="flex-1 h-full w-full">
+            {children}
+          </div>
+
+        </div>
+        
         <TanStackDevtools
           config={{
             position: "bottom-right",
