@@ -1,24 +1,5 @@
-import { CheckCircle, CodeXml, FolderCode, Gem, Info, Link, List, NotepadText, Pencil, QrCode, type LucideIcon} from "lucide-react"
-
-
-interface NavbarSubmenu {
-  label: string;
-  sub_links: NavbarSublinks[];
-}
-
-interface NavbarProps {
-    label: string;
-    href?: string;
-    submenu?: NavbarSubmenu;
-}
-
-interface NavbarSublinks {
-  label: string;
-  icon: LucideIcon,
-  desc: string;
-  href: string;
-}
-
+import { CheckCircle, CodeXml, FolderCode, Gem, Info, Link, List, NotepadText, Pencil, QrCode } from "lucide-react"
+import type { NavbarProps } from "../types/navigation-types"
 
 export const navigationLinks: NavbarProps[]  = [
     {
