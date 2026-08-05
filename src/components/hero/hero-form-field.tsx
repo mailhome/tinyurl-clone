@@ -50,7 +50,7 @@ export default function HeroFormField({ item, domain }: Props) {
         <TabsContent value={item.topHeading} className=" lg:pt-10 pt-3 lg:px-5">
             <CardContent className='flex-1 w-full xl:px-4 xl:mb-0'>
                 {activeTab === item.id ? (
-                    <form onSubmit={handleSubmit} className='flex flex-col gap-4 items-start justify-center gap-y-3 pt-4 h-full'>
+                    <form onSubmit={handleSubmit} className='flex flex-col gap-4 items-start justify-center gap-y-6 pt-4 h-full'>
                         <FieldGroup>
                             <FieldSet className='w-full'>
                                 <FieldGroup className='w-full'>
